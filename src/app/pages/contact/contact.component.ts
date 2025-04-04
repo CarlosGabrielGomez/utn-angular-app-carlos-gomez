@@ -5,7 +5,7 @@ import { FormGroup, FormsModule, ReactiveFormsModule, FormBuilder, Validators } 
   selector: 'app-contact',
   imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+
 })
 
 export class ContactComponent {

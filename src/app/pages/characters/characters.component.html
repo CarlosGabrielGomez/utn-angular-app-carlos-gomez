@@ -1,7 +1,15 @@
-<h1>Lista de personajes</h1>
-<div>
-  @for(character of characters; track character.id) {
-  <!-- renderizar un componente personaje -->
-  <app-character [character]="character"></app-character>
-  }
-</div>
+<h1 class="text-md-center mt-4">Lista de personajes</h1>
+
+<div class="parallax mb-5 mt-5"></div>
+<main>
+  <div class="container">
+    <div class="row mb-4">
+      @for (character of characters; track character.id)
+      {
+      <div class="col-6 col-md-4">
+        <app-character [character]="character"></app-character>
+      </div>
+      }
+    </div>
+  </div>
+</main>

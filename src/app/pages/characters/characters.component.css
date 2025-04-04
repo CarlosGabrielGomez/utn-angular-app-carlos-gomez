@@ -1,0 +1,44 @@
+
+
+.container {
+  display: grid;
+
+}
+
+app-character {
+  width: 100%; /* Asegura que cada producto ocupe todo el espacio de la celda */
+}
+
+h1 {
+  text-align: center;
+}
+
+.img-navbar {
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/Ce4RAAf.png");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+ @media screen and (max-width: 800px) {
+    .parallax{
+      min-height: 100px;
+    }
+  }
+
+

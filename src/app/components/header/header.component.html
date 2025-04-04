@@ -1,4 +1,34 @@
-<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <img  class="img-navbar"   src="Rick_and_Morty.svg" alt="">
+    
+    <a class="navbar-brand" href="">Rick and Morty APP - UTN</a>
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul>
+        <li><a routerLink="/">Inicio</a></li>
+        @if(isLoggingIn) {
+        <li><a routerLink="/characters">Personajes</a></li>
+        }
+        <li><a routerLink="/contact">Contacto</a></li>
+        @if(isLoggingIn) {
+        <button (click)="isLoggingIn = false"  class="btn btn-primary">Cerrar sesión</button>
+        } @else {
+        <button (click)="isLoggingIn = true"  class="btn btn-primary">Iniciar sesión</button>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- <header>
   <h3>Rick and Morty APP - UTN</h3>
   <nav>
     <ul>
@@ -14,4 +44,5 @@
       }
     </ul>
   </nav>
-</header>
+
+</header> -->
